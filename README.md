@@ -21,7 +21,7 @@ The primary goal of this project was to develop a performance tracker that could
 
 The keystone challenge of this implementation was motion seperation and predicting the covariance of vessel motion and wave action. As the device is designed to be affixed to multiple locations of the boat, but generally on or near the mast, we can reasonable assume that the device will be near, but not within the center of mass of the vessel. Using the BNO055's built in sensor fusion we can extract the vertical motion of the vessel into an Earth frame using quaternion orientations from the BNO055. A band pass filter is used to isolate wave-period frequencies.
 
-In addition, we can utilize the pitch and roll of the vessel to calculate both the reference frame of the device (sail boats rarely travel directly into waves). The pitch, roll, and time-delay of the pitching moment and vertical motion can be utilized in a lead-lag compensator to further interpolate the wave height.
+In addition, we can utilize the pitch and roll of the vessel to calculate the reference frame of the device (sail boats rarely travel directly into waves). The pitch, roll, and time-delay of the pitching moment and vertical motion can be utilized in a lead-lag compensator to further interpolate the wave height.
 
 ### Distance Lost, Time Tacking
 
