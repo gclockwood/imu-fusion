@@ -4,8 +4,8 @@ This is a portfolio repo. No code is visible.
 This project explores the domains of control theory and linear algebra through the use of sensor-fusion, Kalman filters, and other signal processing techniques to develop a small-boat performance tracker capable of dead-reckoning and cm level absolute postional accuracy.
 
 ## Hardware
-Bosch Sensortec BNO055 9 DoF IMU
-u-blox ZED-F9R GNSS and IMU
+- Bosch Sensortec BNO055 9 DoF IMU
+- u-blox ZED-F9R GNSS and IMU
 
 ## Processing
 Data streams from the IMU and GNSS co-processors are synthesized in real-time as well as data-logging at 10Hz for asynchronus analysis. The device-level software utilizes gain filtering, Butterworth and Kalman filters to perform real-time sensor fusion and compensate for integration errors.
